@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>KhalidOS</title>
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <div class="top-bar">
+
+        <div class="top-item clickable" id="welcomeopen">
+            KhalidOS
+        </div>
+
+        <div class="top-item status">
+            ● SYSTEM ONLINE
+        </div>
+
+        <div class="top-item" id="timeElement">
+            Loading...
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         DESKTOP ICONS
+    ========================== -->
+
+    <!-- =========================
+     DESKTOP ICONS
+========================== -->
+
+<div class="desktop-icons">
+
+    <div class="desktop-icon" id="notepadIcon">
+        <div class="icon">📝</div>
+        <p>Notepad</p>
+    </div>
+
+    <div class="desktop-icon" id="weatherIcon">
+        <div class="icon">🌤️</div>
+        <p>Weather</p>
+    </div>
+
+</div>
+
+    <!-- =========================
+     WEATHER WINDOW
+========================== -->
+
+<div class="window weather-window" id="weather">
+
+    <!-- WEATHER TITLE BAR -->
+    <div class="window-titlebar" id="weatherheader">
+
+        <div class="window-buttons">
+
+            <span
+                class="close"
+                id="weatherclose"
+                title="Close">
+            </span>
+
+            <span class="minimize"></span>
+            <span class="maximize"></span>
+
+        </div>
+
+        <span class="window-title">
+            Weather
+        </span>
+
+    </div>
+
+
+    <!-- WEATHER CONTENT -->
+    <div class="weather-content">
+
+        <div class="weather-location">
+            MUSCAT
+        </div>
+
+        <div class="weather-date" id="weatherDate">
+            Loading...
+        </div>
+
+
+        <div class="weather-main">
+
+            <div class="weather-icon">
+                ☀️
+            </div>
+
+            <div class="weather-temperature">
+                32°C
+            </div>
+
+            <div class="weather-condition">
+                CLEAR
+            </div>
+
+        </div>
+
+
+        <!-- WEATHER INFORMATION -->
+
+        <div class="weather-information">
+
+            <div class="weather-stat">
+
+                <span class="weather-label">
+                    HUMIDITY
+                </span>
+
+                <strong>
+                    54%
+                </strong>
+
+            </div>
+
+
+            <div class="weather-stat">
+
+                <span class="weather-label">
+                    WIND
+                </span>
+
+                <strong>
+                    12 km/h
+                </strong>
+
+            </div>
+
+
+            <div class="weather-stat">
+
+                <span class="weather-label">
+                    FEELS LIKE
+                </span>
+
+                <strong>
+                    35°C
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORECAST -->
+
+        <div class="forecast">
+
+            <div class="forecast-day">
+                <span>MON</span>
+                <span class="forecast-icon">☀️</span>
+                <strong>32°</strong>
+            </div>
+
+            <div class="forecast-day">
+                <span>TUE</span>
+                <span class="forecast-icon">☀️</span>
+                <strong>33°</strong>
+            </div>
+
+            <div class="forecast-day">
+                <span>WED</span>
+                <span class="forecast-icon">🌤️</span>
+                <strong>31°</strong>
+            </div>
+
+            <div class="forecast-day">
+                <span>THU</span>
+                <span class="forecast-icon">☀️</span>
+                <strong>34°</strong>
+            </div>
+
+            <div class="forecast-day">
+                <span>FRI</span>
+                <span class="forecast-icon">☀️</span>
+                <strong>33°</strong>
+            </div>
+
+        </div>
+
+
+        <div class="weather-terminal">
+            khalidos@weather:~$
+            <span>forecast loaded_</span>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- =========================
+         WELCOME WINDOW
+    ========================== -->
+
+    <div class="window" id="welcome">
+
+        <!-- WINDOW HEADER -->
+        <div class="window-titlebar" id="welcomeheader">
+
+            <div class="window-buttons">
+
+                <span
+                    class="close"
+                    id="welcomeclose"
+                    title="Close">
+                </span>
+
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+
+            </div>
+
+            <span class="window-title">
+                Welcome
+            </span>
+
+        </div>
+
+
+        <!-- WELCOME CONTENT -->
+        <div class="window-content">
+
+            <div class="terminal-logo">
+                &gt;_
+            </div>
+
+            <h1>KhalidOS</h1>
+
+            <p class="access">
+                [ SYSTEM ACCESS GRANTED ]
+            </p>
+
+            <p>
+                Welcome to <strong>KhalidOS</strong>.
+            </p>
+
+            <p>
+                A personal operating system built for cybersecurity,
+                experimentation, coding, and exploration.
+            </p>
+
+
+            <div class="system-information">
+
+                <p>
+                    STATUS:
+                    <strong>ONLINE</strong>
+                </p>
+
+                <p>
+                    USER:
+                    Khalid
+                </p>
+
+                <p>
+                    MODE:
+                    HACKER
+                </p>
+
+                <p>
+                    SECURITY:
+                    ACTIVE
+                </p>
+
+            </div>
+
+
+            <div class="terminal-line">
+
+                khalid@khalidos:~$
+                <span>system ready_</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ↑ WELCOME WINDOW ENDS HERE ↑ -->
+
+
+    <!-- =========================
+         NOTEPAD WINDOW
+    ========================== -->
+
+    <div class="window notepad-window" id="notepad">
+
+        <!-- NOTEPAD HEADER -->
+        <div class="window-titlebar" id="notepadheader">
+
+            <div class="window-buttons">
+
+                <span
+                    class="close"
+                    id="notepadclose"
+                    title="Close">
+                </span>
+
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+
+            </div>
+
+            <span class="window-title">
+                Notepad
+            </span>
+
+        </div>
+
+
+        <!-- NOTEPAD TOOLBAR -->
+        <div class="notepad-toolbar">
+
+            <span>FILE</span>
+            <span>EDIT</span>
+
+            <div class="notepad-status">
+
+                <span id="characterCount">
+                    0 characters
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NOTEPAD TEXT AREA -->
+        <textarea
+            id="notepadText"
+            placeholder="Start typing..."
+            spellcheck="false"
+        ></textarea>
+
+    </div>
+
+    <!-- ↑ NOTEPAD WINDOW ENDS HERE ↑ -->
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
